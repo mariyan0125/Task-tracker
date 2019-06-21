@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/">
+  <title>Tracker App</title>
+</head>
+<body>
+  <header>
+    <h1>Liaison<span id="logo">ic</span></h1>
+  </header>
+  <div id="container">
+    <h2 id="generalgr">Wlcome to your real-time project tracker!</h2>
+    <div class="uimg"><img src="#" alt="user image"></div>
+    <div id="login">
+      <h2 id="uname"></h2>    
+      <form id="users" action="">
+        <label for="user">Insert your name:</label><br>
+        <input type="text" id="user" autocomplete="off"/><br>
+        <label for="img">Image:</label><br>
+        <input type="file" id="img"/><br>
+        <button class="btn" id="btn_login">Join</button>
+      </form>       
+    </div>
+    <div id="task">  
+      <div id="task-flex">
+        <div id="loggedin_ulist"> 
+            <button class="btn" id="btn_leave">Leave</button>
+            <h3>App Users</h3>
+            <ul id="loggedin_users"></ul> 
+        </div>
+        <div id="form">
+          <form class="form_task" method="post" action="#">      
+              <input class="form_task_text" type="text" placeholder="Let others know what part of the project you're working on "/>
+              <input class="form_task_button btn" type="submit" value="Add"/>
+          </form>
+          <div class="tasklist">
+              <ul></ul>
+          </div>
+      </div>
+    </div> 
+  </div>
+  </div>
+  <footer>Copyright 2019</footer>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="/js"></script>
+</body>
+</html>

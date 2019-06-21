@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #274472;
+  height: 100%;
+}
+header {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  background-color: rgba(39, 68, 114);
+  color: #2e765e;
+  padding: 0.7em;
+  border-bottom: 1px solid #2e765e;
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #f3f3f3;
+  clear: both;
+}
+span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+h1 {
+  margin: 0 1em;
+  letter-spacing: 5px;
+}
+h3 {
+  color: #2e765e;
+}
+h2{
+  text-align: center;
+}
+#logo {
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.5em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #2e765e;
+}
+a:hover {
+  color: red;
+}
+
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 160px);
+}
+.btn {
+  padding: 5px 20px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px;
+  color: white;
+  background-color: #274472;
+  border: 1px solid #274472;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #2e765e;
+}
+#uname {
+  text-align: center;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 2em;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: none;
+}
+#img{
+  margin: 1em 0;
+}
+
+.uimg {
+  margin: 1em auto;
+  text-align: center;
+}
+
+#loggedin_ulist {
+  flex-basis: 25%;
+  margin-right: 0;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 2px;
+  width: 25%;
+  background-color: #f3f3f3;
+  padding: 1em;
+  -webkit-box-shadow: 0px 5px 7px 4px rgba(189, 188, 188, 0.64);
+  -moz-box-shadow: 0px 5px 7px 4px rgba(189, 188, 188, 0.64);
+  box-shadow: 0px 5px 7px 4px rgba(189, 188, 188, 0.64);
+}
+
+#loggedin_users {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+#task {
+  text-align: center;
+  display: none;
+}
+
+#task-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#form {
+  flex-basis: 70%;
+}
+
+.form_task_text {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form_task_button {
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+#user {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 1em 0;
+}
+
+.tasklist {
+  text-align: left;
+}
+
+.item {
+  box-shadow: 0 3px 5px rgba(243, 238, 238, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  #loggedin_ulist {
+    flex-grow: 1;
+  }
+  #form {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+  #container {
+    margin: 0.7em;
+  }
+}
