@@ -1,6 +1,6 @@
 //==== EVENT LISTENERS ====
 $(function (){
-  const _host = "http://localhost:3000";
+  const _host = "https://quiet-meadow-81492.herokuapp.com/";
   const socket = io.connect(_host);
   let userName = "Mr.X";
   let tasklist = [];
